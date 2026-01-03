@@ -1,13 +1,4 @@
-没问题，这是一个完整的、整合好的 `README.md` 文件内容。
-
-你可以直接点击代码块右上角的 **"Copy"** 按钮，然后粘贴到你 GitHub 仓库的 `README.md` 文件中。
-
-> **注意**：请务必替换掉文中 **方括号 `[...]**` 包裹的内容（例如项目简介、具体的图表描述、成员名字等），将其改为你们小组实际的项目信息。
-
----
-
-
-# DVAM Group 1 Final Project: [在此处填写具体项目标题] 📊
+# DVAM Group 1 Final Project: [项目标题] 📊
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
