@@ -1,6 +1,6 @@
 # DVAM Group 1 Final Project: [项目标题] 📊
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License](https://img.shields.io/badge/License-APSL%202.0-blue.svg)](https://opensource.org/licenses/APSL-2.0)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![Course](https://img.shields.io/badge/Course-DVAM-green)]()
 [![Status](https://img.shields.io/badge/Status-Completed-success)]()
