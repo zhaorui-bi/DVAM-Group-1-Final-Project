@@ -132,16 +132,4 @@ jupyter notebook
 
 ---
 
-*Last updated: 2024*
-
-```
-
----
-
-### 下一步建议 (Next Steps for You):
-
-1.  **创建 LICENSE 文件**: 在仓库根目录下新建一个名为 `LICENSE` 的文件（无后缀），复制 [MIT License 内容](https://opensource.org/licenses/MIT) 进去。
-2.  **生成 requirements.txt**: 在你的电脑终端运行 `pip freeze > requirements.txt`，并将该文件上传，这样别人才能安装你用的包。
-3.  **上传图片**: 在仓库里建一个 `images` 文件夹，放几张你们项目最好看的图表截图，然后在 README 中把 `![主要分析图表](images/main_plot.png)` 这行代码的路径改成真正的图片路径。
-
-```
+*Last updated: Jan 3 2026*
