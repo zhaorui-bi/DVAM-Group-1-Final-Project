@@ -104,8 +104,8 @@ jupyter notebook
 
 ## 📄 许可证 (License)
 
-本项目代码采用 **Apache License 2.0 License** 开源许可证。
-这意味着您可以自由地使用、复制、修改和分发本项目代码，但需保留版权声明。详情请参阅 [LICENSE](LICENSE) 文件。
+本项目采用 **Apple Public Source License 2.0 (APSL-2.0)** 开源许可证。
+详情请参阅 [LICENSE](LICENSE) 文件或访问 [Open Source Initiative](https://opensource.org/licenses/APSL-2.0) 查看完整条款。
 
 ## 🖊️ 引用 (Citation)
 
