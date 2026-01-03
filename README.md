@@ -104,8 +104,8 @@ jupyter notebook
 
 ## 📄 许可证 (License)
 
-本项目代码采用 **MIT License** 开源许可证。
-这意味着您可以自由地使用、复制、修改和分发本项目代码，但需保留版权声明。详情请参阅 [LICENSE](https://www.google.com/search?q=LICENSE) 文件。
+本项目代码采用 **GUN License** 开源许可证。
+这意味着您可以自由地使用、复制、修改和分发本项目代码，但需保留版权声明。详情请参阅 [LICENSE](LICENSE) 文件。
 
 ## 🖊️ 引用 (Citation)
 
