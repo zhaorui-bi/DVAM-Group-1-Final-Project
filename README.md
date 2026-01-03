@@ -97,10 +97,10 @@ jupyter notebook
 
 | 姓名 | 主要职责 (Role) | GitHub |
 | --- | --- | --- |
-| **姜肇瑞** | [例如: 项目统筹, 数据清洗] | [@zhaorui-bi](https://github.com/zhaorui-bi) |
-| **[成员2姓名]** | [例如: 可视化设计, 前端开发] | [@username](https://github.com/) |
-| **[成员3姓名]** | [例如: 模型构建, 报告撰写] | [@username](https://github.com/) |
-| **[成员4姓名]** | [例如: 数据搜集, PPT制作] | [@username](https://github.com/) |
+| **姜肇瑞** | [项目统筹, 文档撰写] | [@zhaorui-bi](https://github.com/zhaorui-bi) |
+| **[成员2姓名]** | [] | [@username](https://github.com/) |
+| **[成员3姓名]** | [] | [@username](https://github.com/) |
+| **[成员4姓名]** | [] | [@username](https://github.com/) |
 
 ## 📄 许可证 (License)
 
