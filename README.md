@@ -7,25 +7,13 @@
 
 ## 📖 项目背景 (Abstract)
 
-欢迎访问 **Data Visualization and Analysis Methods (DVAM)** 课程第 1 小组的期末项目仓库。
-
-本项目聚焦于 **[在此处简要描述项目主题，例如：分析过去十年全球电动汽车的销售趋势与环境影响]**。通过运用数据清洗、统计分析及高级可视化技术，我们旨在揭示 **[在此处描述你们想要解决的问题或发现的规律]**。
-
-项目核心工作包括数据预处理、探索性数据分析 (EDA)、交互式仪表板开发以及基于 **[提及使用的模型或算法，如：时间序列分析/回归模型]** 的深度挖掘。
 
 ## ✨ 核心亮点与可视化 (Key Features & Visualizations)
 
 ### 1. 数据深度挖掘
-* 对 **[数据来源名称]** 的原始数据进行了全面的清洗，处理了缺失值与异常值。
-* 进行了特征工程，提取了关键指标用于后续分析。
+
 
 ### 2. 可视化展示
-> *在此处替换为你实际的项目截图，例如：*
-> `![主要分析图表](images/main_plot.png)`
-
-* **[图表 1 名称]**: 展示了 [变量 A] 与 [变量 B] 之间的相关性。
-* **[图表 2 名称]**: 使用热力图/地理可视化展示了数据的空间分布特征。
-* **[图表 3 名称]**: 交互式图表允许用户筛选不同时间段的数据。
 
 ## 📂 目录结构 (Directory Structure)
 
@@ -54,31 +42,20 @@ DVAM-Group-1-Final-Project/
 
 ## 🚀 快速开始 (Quick Start)
 
-如果您希望在本地运行本项目，请按照以下步骤操作：
+
 
 ### 1. 环境准备
-
-确保您的系统中已安装 Python 3.8 或更高版本。
 
 ### 2. 克隆仓库
 
 ```bash
-git clone [https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project.git](https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project.git)
-cd DVAM-Group-1-Final-Project
+
 
 ```
 
 ### 3. 安装依赖
 
-建议使用虚拟环境：
-
 ```bash
-# 创建虚拟环境 (可选)
-python -m venv venv
-source venv/bin/activate  # Windows 使用: venv\Scripts\activate
-
-# 安装依赖包
-pip install -r requirements.txt
 
 ```
 
@@ -87,7 +64,7 @@ pip install -r requirements.txt
 启动 Jupyter Notebook 查看分析过程：
 
 ```bash
-jupyter notebook
+
 
 ```
 
@@ -98,9 +75,9 @@ jupyter notebook
 | 姓名 | 主要职责 (Role) | GitHub |
 | --- | --- | --- |
 | **姜肇瑞** | 项目统筹, 文档撰写 | [@zhaorui-bi](https://github.com/zhaorui-bi) |
-| **[成员2姓名]** |  | [@username](https://github.com/) |
-| **[成员3姓名]** |  | [@username](https://github.com/) |
-| **[成员4姓名]** |  | [@username](https://github.com/) |
+| **** |  | [@username](https://github.com/) |
+| **** |  | [@username](https://github.com/) |
+| **** |  | [@username](https://github.com/) |
 
 ## 📄 许可证 (License)
 
@@ -112,23 +89,13 @@ jupyter notebook
 如果您在学术研究或项目中参考了本仓库的内容，请使用以下 BibTeX 格式进行引用：
 
 ```bibtex
-@misc{DVAM_Group1_2024,
-  author = {Bi, Zhaorui and [Member2 Surname], [Name] and [Member3 Surname], [Name]},
-  title = {DVAM Group 1 Final Project: [Project Title]},
-  year = {2024},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{[https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project](https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project)}},
-  note = {Data Visualization and Analysis Methods Course Project}
-}
 
 ```
 
 ## 🙏 致谢 (Acknowledgments)
 
-* 感谢 **[教授姓名]** 教授在 DVAM 课程中的悉心指导。
-* 数据集来源：[提及数据来源网站，如 Kaggle, World Bank 等]。
-* 感谢 [Matplotlib / Seaborn / Plotly] 等开源社区提供的工具支持。
+* 感谢 **余珂** 教授在 DVAM 课程中的悉心指导。
+* 数据集来源：[GBIF | Global Biodiversity Information Facility](https://www.gbif.org/)。
 
 ---
 
