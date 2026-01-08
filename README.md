@@ -1,4 +1,4 @@
-# DVAM Group 1 Final Project: [项目标题] 📊
+# DVAM Group 1 Final Project: 📊
 
 [![License](https://img.shields.io/badge/License-APSL%202.0-blue.svg)](https://opensource.org/licenses/APSL-2.0)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
