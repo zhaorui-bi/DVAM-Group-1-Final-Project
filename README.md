@@ -74,10 +74,10 @@ DVAM-Group-1-Final-Project/
 
 | 姓名 | 主要职责 (Role) | GitHub |
 | --- | --- | --- |
-| **姜肇瑞** | 项目统筹, 文档撰写 | [@zhaorui-bi](https://github.com/zhaorui-bi) |
-| **** |  | [@username](https://github.com/) |
-| **** |  | [@username](https://github.com/) |
-| **** |  | [@username](https://github.com/) |
+| **姜肇瑞** | 项目统筹, 数据搜集预处理, 文档撰写 | [@zhaorui-bi](https://github.com/zhaorui-bi) |
+| **程梓雄** | 数据预处理, 文档撰写 | [@orangebear-star](https://github.com/orangebear-star) |
+| **徐子洋** |  | [@username](https://github.com/) |
+| **范竞元** |  | [@username](https://github.com/) |
 
 ## 📄 许可证 (License)
 
