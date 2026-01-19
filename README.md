@@ -96,7 +96,7 @@ DVAM-Group-1-Final-Project/
 
 * 感谢 **余珂** 教授在 DVAM 课程中的悉心指导。
 * 数据集来源：
-1. [GBIF](https://www.gbif.org/)。
+1. [GBIF](https://www.gbif.org/)
 2. [CHELSA ](https://www.chelsa-climate.org/datasets)
 
 ---
