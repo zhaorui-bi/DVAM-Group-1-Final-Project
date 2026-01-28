@@ -86,7 +86,7 @@ https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 ## 🙏 致谢 (Acknowledgments)
 
 * 感谢 **余珂** 教授在 DVAM 课程中的悉心指导。
-* 数据集来源：[GBIF](https://www.gbif.org/)
+* 数据集来源：[GBIF](https://www.gbif.org/) and [CHELSA](https://www.chelsa-climate.org/)
 
 ---
 
