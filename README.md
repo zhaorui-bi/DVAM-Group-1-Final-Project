@@ -34,7 +34,7 @@ DVAM-Group-1-Final-Project/
 ### 1. 克隆仓库
 
 ```bash
-git clone 
+git clone https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project.git
 ```
 
 ### 2. 安装依赖
