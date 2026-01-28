@@ -49,7 +49,7 @@ uv pip install -r requirements.txt
 具体预处理结果和可视化结果在Jupyter Notebook当中
 
 ```bash
-cd src
+src/occurrence_visualization.ipynb
 ```
 
 ### 4. 可视化交互
