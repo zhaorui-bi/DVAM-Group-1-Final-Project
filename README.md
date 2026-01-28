@@ -7,13 +7,9 @@
 
 ## 📖 项目背景 (Abstract)
 
-
 ## ✨ 核心亮点与可视化 (Key Features & Visualizations)
 
-### 1. 数据深度挖掘
 
-
-### 2. 可视化展示
 
 ## 📂 目录结构 (Directory Structure)
 
@@ -35,42 +31,32 @@ DVAM-Group-1-Final-Project/
 
 ## 🚀 快速开始 (Quick Start)
 
-
-
-### 1. 环境准备
-
-### 2. 克隆仓库
+### 1. 克隆仓库
 
 ```bash
-
-
+git clone 
 ```
 
-### 3. 安装依赖
+### 2. 安装依赖
 
 ```bash
-
+pip install uv
+uv pip install -r requirements.txt
 ```
 
-### 4. 运行分析
+### 3. 数据预处理与分析
 
-启动 Jupyter Notebook 查看分析过程：
+具体预处理结果和可视化结果在Jupyter Notebook当中
 
 ```bash
-
-
+cd src
 ```
 
-
+### 4. 可视化交互
 
 https://github.com/user-attachments/assets/c441041d-fdf7-4364-8286-92fa1089198d
 
-
-
 https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
-
-
-
 
 
 ## 👥 小组成员 (Contributors)
