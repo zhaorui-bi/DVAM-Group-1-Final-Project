@@ -21,23 +21,16 @@
 
 ```text
 DVAM-Group-1-Final-Project/
+├── fig/                    # 交互式数据
+│   ├──      
 ├── data/                   # 数据文件夹
-│   ├── raw/                # 原始数据集 (只读)
-│   └── processed/          # 清洗和处理后的数据
-├── notebooks/              # Jupyter Notebooks 分析过程
-│   ├── 01_data_cleaning.ipynb
-│   ├── 02_eda.ipynb
-│   └── 03_visualization.ipynb
+│   ├──                
 ├── src/                    # 源代码脚本 (如 .py 模块)
-│   ├── utils.py
-│   └── visualization.py
-├── results/                # 项目产出
-│   ├── figures/            # 导出的高清图表
-│   └── report.pdf          # 最终分析报告
+│   ├── 
+│   └── 
 ├── requirements.txt        # 项目依赖库列表
 ├── LICENSE                 # 许可证文件
 └── README.md               # 项目说明文档
-
 ```
 
 ## 🚀 快速开始 (Quick Start)
