@@ -68,6 +68,14 @@ DVAM-Group-1-Final-Project/
 
 ```
 
+
+https://github.com/user-attachments/assets/256bd5be-6bfd-4d1a-974e-47bc1b88a2df
+
+
+
+https://github.com/user-attachments/assets/6ab0f79d-e388-468d-8a77-11cf621586c2
+
+
 ## 👥 小组成员 (Contributors)
 
 感谢以下团队成员对本项目做出的贡献：
