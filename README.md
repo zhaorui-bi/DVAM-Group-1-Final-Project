@@ -68,7 +68,7 @@ https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 | **姜肇瑞** | 项目统筹, 数据搜集预处理, 文档撰写 | [@zhaorui-bi](https://github.com/zhaorui-bi) |
 | **徐子洋** | 可视化分析代码编写 | [@xzy-Zayn](https://github.com/xzy-Zayn) |
 | **程梓雄** | 数据预处理, 文档撰写 | [@orangebear-star](https://github.com/orangebear-star) |
-| **范竞元** |  | [@username](https://github.com/) |
+| **范竞元** |  | [@t13yu](https://github.com/t13yu) |
 
 ## 📄 许可证 (License)
 
