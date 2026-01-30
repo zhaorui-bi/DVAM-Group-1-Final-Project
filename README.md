@@ -7,7 +7,9 @@
 
 ## 📖 项目背景 (Abstract)
 
-本项目构建了一个自动化的 Python 计算管道，旨在解决宏观生态学中的核心数据挑战：如何将离散的物种分布点数据（Vector）与连续的高分辨率环境栅格数据（Raster）进行精准融合。项目集成了全球最大的生物多样性数据库（GBIF）与最先进的机械降尺度气候数据集（CHELSA），为物种分布模型（SDM）和气候变化影响评估提供标准化的数据基础。
+DVAM Group 1 Final Project | Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform 项目立足于宏观生态学、数据科学与气候信息学的交叉领域，核心任务是构建一个鲁棒的计算管道，用于实现全球生物多样性信息网络（GBIF）的物种分布数据与 CHELSA（高分辨率地表气候及其相关数据）气候栅格数据的自动化集成。   
+
+在当前“人类世”的地质时代背景下，生物多样性的丧失速度达到了前所未有的水平。为了制定有效的保护策略，研究人员必须理解物种与其环境之间的复杂关系。这种关系通常被称为“生态位”（Ecological Niche）。然而，量化生态位面临着巨大的技术瓶颈：生物数据通常是以离散的、基于矢量的“点”数据形式存在（例如，博物馆标本的经纬度记录），而环境数据（如温度、降水）则通常存储为连续的、基于栅格的“面”数据（如 GeoTIFF 格式的卫星遥感影像） 。DVAM Group 1 项目正是为了解决这一异构数据融合问题而设计，通过 Python和R 编程环境，利用 pygbif 和 rasterio 等工具库，实现了从数据获取、清洗、空间提取到高维可视化的全流程自动化。
 
 ## ✨ 核心亮点与可视化 (Key Features & Visualizations)
 
@@ -27,13 +29,16 @@ Sweden Biodiversity and Climate Information Facility Interactive Visualization P
 
 ```text
 DVAM-Group-1-Final-Project/
-├── fig/                    # 交互式数据
-│   ├──      
-├── data/                   # 数据文件夹
-│   ├──                
-├── src/                    # 源代码脚本 (如 .py 模块)
-│   ├── 
-│   └── 
+├── video/                  # 交互式可视化视频
+│   ├── Asterales_heatmap.mp4     
+│   └── Passeriformes_heatmap.mp4
+├── data/                   # 数据源文件和数据预处理脚本.R
+│   ├── cleaning_log.csv   
+│   ├── occurrence_clean.csv 
+│   ├── world_occurrences.csv  
+│   ├── preprocess.R        
+├── visualization/          # 可视化Jupter Notebook(核心图)
+│   ├── occurrence_visualization.ipynb
 ├── requirements.txt        # 项目依赖库列表
 ├── LICENSE                 # 许可证文件
 └── README.md               # 项目说明文档
@@ -90,7 +95,16 @@ https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 如果您在学术研究或项目中参考了本仓库的内容，请使用以下 BibTeX 格式进行引用：
 
 ```bibtex
-
+@misc{DVAMGroup12026,
+  author       = {Jiang, Zhaorui and
+                  Xu, Ziyang and
+                  Cheng, Zixiong and
+                  Fan, Jingyuan},
+  title        = {DVAM Group 1 Final Project: Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform},
+  howpublished = {\url{https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project}},
+  year         = {2026},
+  note         = {GitHub repository}
+}
 ```
 
 ## 🙏 致谢 (Acknowledgments)
@@ -100,4 +114,4 @@ https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 
 ---
 
-*Last updated: Jan 3 2026*
+*Last updated: Jan 30 2026*
