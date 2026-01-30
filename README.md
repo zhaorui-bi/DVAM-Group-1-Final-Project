@@ -33,9 +33,6 @@ DVAM-Group-1-Final-Project/
 │   ├── Asterales_heatmap.mp4     
 │   └── Passeriformes_heatmap.mp4
 ├── data/                   # 数据源文件和数据预处理脚本.R
-│   ├── cleaning_log.csv   
-│   ├── occurrence_clean.csv 
-│   ├── world_occurrences.csv  
 │   ├── preprocess.R        
 ├── visualization/          # 可视化Jupter Notebook(核心图)
 │   ├── occurrence_visualization.ipynb
@@ -60,6 +57,10 @@ uv pip install -r requirements.txt
 ```
 
 ### 3. 数据预处理与分析
+
+数据原文件大于100MB无法直接上传在GitHub当中, 我们提供了一个Google Drive Link下载数据: 
+
+https://drive.google.com/file/d/1DxBIXcHfnpuYyYtIi6pVG3LIbPpVbLjc/view?usp=drive_link
 
 具体预处理结果和可视化结果在Jupyter Notebook当中
 
