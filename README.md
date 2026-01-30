@@ -7,9 +7,19 @@
 
 ## 📖 项目背景 (Abstract)
 
+本项目构建了一个自动化的 Python 计算管道，旨在解决宏观生态学中的核心数据挑战：如何将离散的物种分布点数据（Vector）与连续的高分辨率环境栅格数据（Raster）进行精准融合。项目集成了全球最大的生物多样性数据库（GBIF）与最先进的机械降尺度气候数据集（CHELSA），为物种分布模型（SDM）和气候变化影响评估提供标准化的数据基础。
+。
 ## ✨ 核心亮点与可视化 (Key Features & Visualizations)
 
+Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform 将抽象数据转化为直观的科学图表：
 
+**地理空间 (G-Space)**：使用 Folium 生成交互式地图，支持在大尺度上查看物种分布与气候图层的叠加效果 。   
+
+**环境空间 (E-Space)**：
+
+1. 生态位可视化：利用 Seaborn 绘制小提琴图，展示物种对温度/降水的耐受范围 。   
+
+2. 降维分析：通过主成分分析（PCA）处理高维气候变量，量化不同物种在环境空间中的生态位重叠度 。
 
 ## 📂 目录结构 (Directory Structure)
 
