@@ -8,7 +8,7 @@
 ## 📖 项目背景 (Abstract)
 
 本项目构建了一个自动化的 Python 计算管道，旨在解决宏观生态学中的核心数据挑战：如何将离散的物种分布点数据（Vector）与连续的高分辨率环境栅格数据（Raster）进行精准融合。项目集成了全球最大的生物多样性数据库（GBIF）与最先进的机械降尺度气候数据集（CHELSA），为物种分布模型（SDM）和气候变化影响评估提供标准化的数据基础。
-。
+
 ## ✨ 核心亮点与可视化 (Key Features & Visualizations)
 
 Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform 将抽象数据转化为直观的科学图表：
