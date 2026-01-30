@@ -15,13 +15,15 @@ DVAM Group 1 Final Project | Sweden Biodiversity and Climate Information Facilit
 
 Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform 将抽象数据转化为直观的科学图表：
 
-**地理空间 (G-Space)**：使用 Folium 生成交互式地图，支持在大尺度上查看物种分布与气候图层的叠加效果 。   
+**地理空间 (G-Space)**：
+
+- 使用 Folium 生成交互式地图，支持在大尺度上查看物种分布与气候图层的叠加效果 。   
 
 **环境空间 (E-Space)**：
 
-1. 生态位可视化：利用 Seaborn 绘制小提琴图，展示物种对温度/降水的耐受范围 。   
+- 生态位可视化：利用 Seaborn 绘制小提琴图，展示物种对温度/降水的耐受范围 。   
 
-2. 降维分析：通过主成分分析（PCA）处理高维气候变量，量化不同物种在环境空间中的生态位重叠度 。
+- 降维分析：通过主成分分析（PCA）处理高维气候变量，量化不同物种在环境空间中的生态位重叠度 。
 
 ## 📂 目录结构 (Directory Structure)
 
