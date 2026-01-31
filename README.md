@@ -76,6 +76,13 @@ https://github.com/user-attachments/assets/c441041d-fdf7-4364-8286-92fa1089198d
 
 https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 
+### 5. 网站可视化
+
+
+
+https://github.com/user-attachments/assets/7e510669-51b3-44b0-8932-767ea249c9ea
+
+
 
 ## 👥 小组成员 (Contributors)
 
@@ -86,7 +93,7 @@ https://github.com/user-attachments/assets/ff6436c1-9556-4cfd-8433-1a60afc66ec6
 | **姜肇瑞** | 项目统筹, 数据搜集预处理, 文档撰写 | [@zhaorui-bi](https://github.com/zhaorui-bi) |
 | **徐子洋** | 可视化分析代码编写 | [@xzy-Zayn](https://github.com/xzy-Zayn) |
 | **程梓雄** | 数据预处理, 文档撰写 | [@orangebear-star](https://github.com/orangebear-star) |
-| **范竞元** |  | [@t13yu](https://github.com/t13yu) |
+| **范竞元** | 网站可视化 | [@t13yu](https://github.com/t13yu) |
 
 ## 📄 许可证 (License)
 
