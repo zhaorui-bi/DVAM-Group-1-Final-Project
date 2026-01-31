@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization Assignment | Group 1</title>
+    <style>
+        :root {
+            --nature-green: #2D4F1E;      /* 高饱和度深绿，用于按钮和强调 */
+            --nature-beige: #F5F2ED;      /* 米白色，卡片背景 */
+            --text-main: #33322E;         /* 深棕黑色，柔和专业 */
+            --text-sub: #6B6862;          /* 次要文字色 */
+            --glass-bg: rgba(245, 242, 237, 0.88); /* 磨砂玻璃感 */
+            --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-font-smoothing: antialiased; }
+
+        body {
+            font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+            color: var(--text-main);
+            background-color: #E6E2D3;
+            line-height: 1.6;
+        }
+
+        /* 1. 全屏自然背景 */
+        .full-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), 
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2070');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            filter: saturate(0.5) brightness(1.05);
+        }
+
+        /* 2. 极简导航 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 60px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo { font-size: 20px; font-weight: 700; letter-spacing: -0.5px; color: var(--nature-green); }
+
+        .cta-btn {
+            background-color: var(--nature-green);
+            color: #FFFFFF;
+            padding: 12px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(45, 79, 30, 0.2);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(45, 79, 30, 0.3);
+            filter: brightness(1.1);
+        }
+
+        /* 3. Hero 标语区 */
+        .hero {
+            text-align: center;
+            padding: 140px 20px 100px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            letter-spacing: -2px;
+            color: var(--text-main);
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: var(--text-sub);
+            max-width: 650px;
+            margin: 0 auto 40px;
+            font-weight: 300;
+        }
+
+        /* 4. 地理探索模块 */
+        .map-section {
+            max-width: 1240px;
+            margin: 0 auto 120px;
+            padding: 0 40px;
+        }
+
+        .section-header {
+            margin-bottom: 40px;
+            padding-left: 10px;
+        }
+
+        .badge {
+            color: var(--nature-green);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .map-container {
+            background: var(--glass-bg);
+            padding: 12px;
+            border-radius: 32px;
+            border: 1px solid rgba(255,255,255,0.4);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.06);
+            overflow: hidden;
+            margin-bottom: 60px; /* 增加下方间距 */
+        }
+
+        .map-viewport {
+            width: 100%;
+            height: 650px;
+            border-radius: 22px;
+            overflow: hidden;
+            position: relative;
+            background: #E8E8E8;
+        }
+
+        .map-viewport iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* 5. 数据洞察网格 */
+        .gallery-section {
+            max-width: 1240px;
+            margin: 0 auto 100px;
+            padding: 0 40px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+            gap: 40px;
+        }
+
+        .card {
+            background: var(--glass-bg);
+            border-radius: 24px;
+            padding: 28px;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .card:hover {
+            background: #FFFFFF;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+
+        .img-box {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            background: #FFFFFF;
+            border-radius: 14px;
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            border: 1px solid #F0F0F0;
+        }
+
+        .img-box img {
+            max-width: 85%;
+            max-height: 85%;
+            object-fit: contain;
+            transition: var(--transition);
+        }
+
+        .card h3 { font-size: 18px; font-weight: 600; margin-bottom: 12px; color: var(--nature-green); }
+        .card p { font-size: 14px; color: var(--text-sub); line-height: 1.6; }
+
+        /* 6. 模态框交互 */
+        #modal {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(51, 50, 46, 0.6);
+            backdrop-filter: blur(15px);
+            display: none; justify-content: center; align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-inner {
+            background: var(--nature-beige);
+            width: 90%; max-width: 1000px;
+            border-radius: 30px; padding: 50px;
+            position: relative;
+            animation: slideIn 0.5s ease;
+        }
+
+        @keyframes slideIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+        .close-btn { position: absolute; top: 30px; right: 30px; font-size: 32px; cursor: pointer; color: var(--text-sub); }
+
+        @media (max-width: 768px) {
+            nav { padding: 20px; }
+            .hero h1 { font-size: 36px; }
+            .gallery-grid { grid-template-columns: 1fr; }
+            .map-viewport { height: 450px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="full-bg"></div>
+
+<nav>
+    <div class="logo">
+        GROUP 1  <!-- 修正了笔误 GROPU → GROUP -->
+        <div class="member-names">姜肇瑞  程梓雄  徐子洋  范竞元</div> <!-- 新增的成员名字行 -->
+    </div>
+    <a href="#map-section" class="cta-btn">开始探索之旅</a>
+</nav>
+
+
+
+<section class="hero">
+    <h1>让复杂的数据，回归自然</h1>
+    <p>深度解析 195,992 条生物观测记录。我们将科技的精密与大地的宁静相结合，带您洞察生命分布的奥秘。</p>
+    <div style="display:flex; gap:16px; justify-content:center;">
+        <a href="#map-section" class="cta-btn" style="padding: 16px 40px; font-size: 16px;">地理空间分析</a>
+        <a href="#explore" class="cta-btn" style="padding: 16px 40px; font-size: 16px; background: transparent; border: 2px solid var(--nature-green); color: var(--nature-green);">查看统计图谱</a>
+    </div>
+</section>
+
+<section id="map-section" class="map-section">
+    <div class="section-header">
+        <span class="badge">Spatial Exploration</span>
+        <h2>物种空间足迹</h2>
+        <p style="color: var(--text-sub); max-width: 500px; margin-top: 8px;">基于瑞典境内的卫星影像（高德底图），直观呈现核心物种的地理聚类与观测边界。</p>
+    </div>
+    <div class="map-container">
+        <div class="map-viewport">
+            <iframe src="species_std_map_cluster.html" title="Interactive Cluster Map"></iframe>
+            <div style="position: absolute; top: 24px; right: 24px; pointer-events: none;">
+                <div style="background: var(--nature-green); color: white; padding: 6px 14px; border-radius: 20px; font-size: 11px; letter-spacing: 1px;">AMAP SATELLITE</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <span class="badge">Density Heatmap</span>
+        <h2>物种分布密度</h2>
+        <p style="color: var(--text-sub); max-width: 500px; margin-top: 8px;">基于 Asterales（菊目）数据的热力建模，深色区域代表生物观测的高频活跃地带。</p>
+    </div>
+    <div class="map-container">
+        <div class="map-viewport">
+            <iframe src="Asterales_heatmap.html" title="Asterales Heatmap"></iframe>
+            <div style="position: absolute; top: 24px; right: 24px; pointer-events: none;">
+                <div style="background: #D44E4E; color: white; padding: 6px 14px; border-radius: 20px; font-size: 11px; letter-spacing: 1px;">HEATMAP INTENSITY</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="explore" class="gallery-section">
+    <div class="section-header">
+        <span class="badge">Visual Analytics</span>
+        <h2>数据洞察矩阵</h2>
+    </div>
+    <div class="gallery-grid" id="mainGallery">
+        </div>
+</section>
+
+<div id="modal" onclick="closeModal()">
+    <div class="modal-inner" onclick="event.stopPropagation()">
+        <span class="close-btn" onclick="closeModal()">&times;</span>
+        <img id="fullImg" src="" style="width:100%; border-radius:18px; margin-bottom:30px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+        <h2 id="modalTitle" style="color: var(--nature-green); margin-bottom:15px; font-size: 28px;"></h2>
+        <p id="modalDesc" style="font-size: 18px; color: var(--text-sub); line-height: 1.8;"></p>
+    </div>
+</div>
+
+<script>
+    // 定义 12 张分析图表的内容描述
+    const analysisData = [
+        { title: "缺失数据矩阵分析", desc: "展示了 51 个字段的完整性，深色区域代表数据缺失，可见 depth 和 elevation 字段需要重点清洗。" },
+        { title: "Top 20 物种科分布", desc: "反映了观测记录中出现频率最高的科，植物界在样本中占据了主导地位。" },
+        { title: "物种属级频率统计", desc: "细化到属级的分布统计，为生物多样性研究提供精准的分类学依据。" },
+        { title: "原始坐标空间分布", desc: "在清洗前的经纬度散点预览，展示了数据点在全球地理网格上的初步聚集。" },
+        { title: "观测时间序列趋势", desc: "2000-2024 年间的观测记录增长曲线，体现了数据采集能力的逐年提升。" },
+        { title: "物种多样性热力图", desc: "基于地理密度的热力建模，直观勾勒出生物活跃的核心热点区域。" },
+        { title: "记录类型构成分析", desc: "对比了机器观测、人类观测与实体标本在数据集中的比例构成。" },
+        { title: "层级分类关联气泡", desc: "展示 Order > Family > Genus 的逻辑层级，气泡大小代表数据量级。" },
+        { title: "坐标异常检测箱线图", desc: "利用统计学方法识别偏离正常地理范围的异常观测点。" },
+        { title: "局部采样密度细节", desc: "针对瑞典南部等高密度观测区域的微观分布细节放大分析。" },
+        { title: "季节性观测波动", desc: "分析不同月份下的物种活跃度，揭示环境因素对观测频率的影响。" },
+        { title: "最终建模热力分布", desc: "经过清洗和加权后的全景空间建模结果，为生态决策提供依据。" }
+    ];
+
+    const gallery = document.getElementById('mainGallery');
+
+    // 动态生成 12 张卡片
+    analysisData.forEach((item, index) => {
+        const card = document.createElement('div');
+        card.className = 'card';
+        const imgSrc = `extracted_images/visualization_${index + 1}.png`;
+        
+        card.innerHTML = `
+            <div class="img-box">
+                <img src="${imgSrc}" onerror="this.src='https://via.placeholder.com/400x300/F5F2ED/2D4F1E?text=Analysis+Chart+${index+1}'">
+            </div>
+            <h3>${item.title}</h3>
+            <p>${item.desc}</p>
+        `;
+        
+        card.onclick = () => openModal(imgSrc, item.title, item.desc);
+        gallery.appendChild(card);
+    });
+
+    function openModal(src, title, desc) {
+        document.getElementById('fullImg').src = src;
+        document.getElementById('modalTitle').innerText = title;
+        document.getElementById('modalDesc').innerText = desc;
+        document.getElementById('modal').style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        document.getElementById('modal').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+</script>
+
+</body>
+</html>
