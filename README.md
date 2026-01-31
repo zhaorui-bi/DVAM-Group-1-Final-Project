@@ -37,10 +37,13 @@ DVAM-Group-1-Final-Project/
 ├── video/                  # 交互式可视化视频
 │   ├── Asterales_heatmap.mp4     
 │   └── Passeriformes_heatmap.mp4
+│   └── website.mp4
 ├── data/                   # 数据源文件和数据预处理脚本.R
 │   ├── preprocess.R        
 ├── visualization/          # 可视化Jupter Notebook(核心图)
 │   ├── occurrence_visualization.ipynb
+├── website/                # 网站可视化(源代码)
+│   ├── extracted_images/   # 可视化图片.png  
 ├── requirements.txt        # 项目依赖库列表
 ├── LICENSE                 # 许可证文件
 └── README.md               # 项目说明文档
